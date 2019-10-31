@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ab" onDragDetected="#affichagep" prefHeight="0.0" prefWidth="1095.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.interfaces.Produit_a_vendre1Controller">
+   <children>
+      <ImageView fitHeight="509.0" fitWidth="1095.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagee/gros-plan-main-dactylographie-ordinateur-portable-papeteries-tasse-cafe-rose-toile-fond_23-2147979078.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="51.0" layoutY="78.0" text="Categorie" />
+      <Label layoutX="52.0" layoutY="134.0" text="brand" />
+      <Label layoutX="60.0" layoutY="175.0" text="size" />
+      <Label layoutX="46.0" layoutY="29.0" text="Description" />
+      <Label layoutX="57.0" layoutY="230.0" text="color" />
+      <TextField fx:id="DESCRIPTION" layoutX="190.0" layoutY="24.0" />
+      <ComboBox fx:id="catégorie" layoutX="191.0" layoutY="73.0" prefHeight="31.0" prefWidth="187.0" promptText="SELECT CATEGORIE" />
+      <ComboBox fx:id="taille" layoutX="191.0" layoutY="170.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="-472.0" layoutY="14.0" text="marque" />
+      <TextField fx:id="marque" layoutX="190.0" layoutY="129.0" />
+      <ComboBox fx:id="color" layoutX="191.0" layoutY="225.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label layoutX="61.0" layoutY="281.0" text="price" />
+      <Button fx:id="ajouterproductt" layoutX="183.0" layoutY="451.0" mnemonicParsing="false" onAction="#ajouterproduct" prefHeight="31.0" prefWidth="134.0" text="save" />
+      <Label layoutX="463.0" layoutY="29.0" prefHeight="34.0" prefWidth="415.0" text="hello what do you have to sell today ">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <Spinner fx:id="price" layoutX="190.0" layoutY="276.0" />
+      <Button fx:id="vv" layoutX="548.0" layoutY="342.0" mnemonicParsing="false" onAction="#affichagepr" prefHeight="31.0" prefWidth="150.0" text="see my products" />
+      <Button fx:id="ret" layoutX="37.0" layoutY="454.0" mnemonicParsing="false" onAction="#preturn" text="return" />
+      <Button fx:id="em" layoutX="573.0" layoutY="441.0" mnemonicParsing="false" onAction="#sendmail" text="send confirmation mail" />
+      <Label layoutX="74.0" layoutY="326.0" text="gendre" />
+      <ComboBox fx:id="genre" layoutX="183.0" layoutY="321.0" prefHeight="31.0" prefWidth="193.0" />
+      <Button fx:id="btn_pic" layoutX="589.0" layoutY="276.0" mnemonicParsing="false" onAction="#upload" text="upload picture" />
+      <ImageView fitHeight="143.0" fitWidth="250.0" layoutX="600.0" layoutY="701.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagee/logo%20final%202.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="typee" fitHeight="166.0" fitWidth="295.0" layoutX="488.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="85.0" layoutY="363.0" text="type" />
+      <TextField fx:id="typp" layoutX="191.0" layoutY="358.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="338.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.interfaces.Interface_princController">
+   <children>
+      <ImageView fitHeight="506.0" fitWidth="754.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/vetements-pour-hommes-chaussures-marron-chemise-bleue-lunettes-soleil-fond-blanc_11358-1552.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="up" buttonType="RAISED" layoutX="495.0" layoutY="266.0" onAction="#signup" prefHeight="47.0" prefWidth="116.0" ripplerFill="WHITE" style="-fx-background-color: #504b50; -fx-background-radius: 5cm;" text="Sign-up" textFill="#96bfff">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="In" buttonType="RAISED" layoutX="114.0" layoutY="266.0" onAction="#signin" prefHeight="47.0" prefWidth="116.0" ripplerFill="WHITE" style="-fx-background-color: #504b50; -fx-background-radius: 5cm;" text="Sign-In" textFill="#e84256">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="90.0" fitWidth="159.0" layoutX="292.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logo%20final%202.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

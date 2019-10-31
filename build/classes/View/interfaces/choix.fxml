@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="signupqst11" prefHeight="422.0" prefWidth="765.0" style="-fx-background-radius: 5cm;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.interfaces.ChoixController">
+   <children>
+      <ImageView fitHeight="422.0" fitWidth="829.0" opacity="0.72" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/login.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField editable="false" focusColor="#ff00a9" layoutX="450.0" layoutY="63.0" prefHeight="56.0" prefWidth="317.0" text="Do you have an account ?" unFocusColor="#ff00a9">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </JFXTextField>
+      <Button fx:id="Login" layoutX="542.0" layoutY="168.0" mnemonicParsing="false" onAction="#login" opacity="0.9" prefHeight="63.0" prefWidth="155.0" style="-fx-background-color: black; -fx-background-radius: 5cm;" text="Log in">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ff00a9" />
+                  <Stop color="#ff00a9" offset="0.007604451955014276" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <JFXTextField fx:id="msg" editable="false" focusColor="#15151700" layoutX="464.0" layoutY="255.0" prefHeight="38.0" prefWidth="314.0" unFocusColor="#4d4d4d00">
+         <font>
+            <Font name="Maiandra GD" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Separator layoutX="422.0" layoutY="21.0" orientation="VERTICAL" prefHeight="380.0" prefWidth="0.0" style="-fx-background-color: #ff00a9;">
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+      </Separator>
+      <JFXTextField fx:id="username" focusColor="#ff00a9" layoutX="14.0" layoutY="67.0" prefHeight="26.0" prefWidth="146.0" promptText="Username" unFocusColor="#ff00aa" />
+      <JFXTextField fx:id="nom" focusColor="#ff00a9" layoutX="14.0" layoutY="125.0" prefHeight="26.0" prefWidth="146.0" promptText="Last name" unFocusColor="#ff00a9" />
+      <JFXTextField fx:id="prenom" focusColor="#ff00a9" layoutX="14.0" layoutY="190.0" prefHeight="26.0" prefWidth="146.0" promptText="First name" unFocusColor="#ff00a9" />
+      <JFXTextField fx:id="email" focusColor="#ff00a9" layoutX="260.0" layoutY="67.0" prefHeight="26.0" prefWidth="145.0" promptText="Email" unFocusColor="#ff00a9" />
+      <JFXComboBox fx:id="role" focusColor="#ff00a9" layoutX="260.0" layoutY="190.0" prefHeight="26.0" prefWidth="146.0" promptText="Sexe" unFocusColor="#ff00a9" />
+      <JFXTextField fx:id="address" focusColor="#ff00a9" layoutX="14.0" layoutY="261.0" prefHeight="26.0" prefWidth="146.0" promptText="Address" unFocusColor="#ff00a9" />
+      <JFXTextField fx:id="number" focusColor="#ff00a9" layoutX="260.0" layoutY="261.0" prefHeight="26.0" prefWidth="146.0" promptText="Phone N°" unFocusColor="#ff00a9" />
+      <Button fx:id="submit" layoutX="126.0" layoutY="339.0" mnemonicParsing="false" onAction="#submit" opacity="0.9" prefHeight="56.0" prefWidth="163.0" style="-fx-background-color: black; -fx-background-radius: 5cm;" text="Submit">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ff00a9" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <JFXTextField fx:id="msg1" editable="false" focusColor="#15151700" layoutX="451.0" layoutY="255.0" prefHeight="38.0" prefWidth="314.0" unFocusColor="#4d4d4d00">
+         <font>
+            <Font name="Maiandra GD" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="pass" focusColor="#ff00a9" layoutX="260.0" layoutY="125.0" prefHeight="26.0" prefWidth="146.0" promptText="Password" unFocusColor="#ff00a9" />
+      <Text layoutX="126.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration" wrappingWidth="196.00001068115228">
+         <font>
+            <Font name="Candara" size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="88.0" fitWidth="213.0" layoutX="542.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logo%20final%202.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

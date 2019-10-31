@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AnchorPane" prefHeight="845.0" prefWidth="1400.0" style="-fx-background-color: #ead4e0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.interfaces.UserInterfaceController">
+   <children>
+      <HBox fx:id="Navbar" layoutX="16.0" layoutY="28.0" prefHeight="791.0" prefWidth="268.0" style="-fx-background-color: #ed1e5e; -fx-background-radius: 5;">
+         <effect>
+            <DropShadow height="57.43" radius="60.3875" spread="0.21" width="186.12" />
+         </effect>
+         <children>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="687.0" prefWidth="231.0">
+               <children>
+                  <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="232.0">
+                     <children>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="388.0" prefWidth="232.0">
+                           <HBox.margin>
+                              <Insets top="170.0" />
+                           </HBox.margin>
+                           <children>
+                              <HBox fx:id="HboxManagement" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="147.0">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets left="100.0" top="40.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@../image/129-512.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="SECOND" strokeType="OUTSIDE" strokeWidth="0.0" text="Fashion News">
+                                       <HBox.margin>
+                                          <Insets top="40.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="22.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="-90.0" top="60.0" />
+                                 </HBox.margin>
+                              </HBox>
+                              <HBox fx:id="HboxStatis" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="162.0">
+                                 <children>
+                                    <ImageView fitHeight="41.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../image/967997-200.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="100.0" top="40.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Text fx:id="HboxStats" strokeType="OUTSIDE" strokeWidth="0.0" text="Fashion Events" wrappingWidth="174.92084503173828">
+                                       <font>
+                                          <Font size="22.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="40.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="-150.0" top="135.0" />
+                                 </HBox.margin>
+                              </HBox>
+                              <HBox fx:id="HboxManagement1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="147.0">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets left="100.0" top="40.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@../image/bags-512.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="SECOND1" strokeType="OUTSIDE" strokeWidth="0.0" text="Buy Something">
+                                       <HBox.margin>
+                                          <Insets top="40.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="22.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="-160.0" top="210.0" />
+                                 </HBox.margin>
+                              </HBox>
+                              <HBox fx:id="HboxLogout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="147.0">
+                                 <children>
+                                    <ImageView fitHeight="32.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets left="100.0" top="40.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@../image/logout_1185746.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="SECOND11" strokeType="OUTSIDE" strokeWidth="0.0" text="Log out">
+                                       <HBox.margin>
+                                          <Insets top="40.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="22.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="-150.0" top="285.0" />
+                                 </HBox.margin>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <ImageView fx:id="menu" fitHeight="68.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="-212.0" top="10.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../image/menu.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hboxlogo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="148.0" prefWidth="200.0">
+                     <HBox.margin>
+                        <Insets left="-195.0" top="540.0" />
+                     </HBox.margin>
+                  </HBox>
+               </children>
+            </HBox>
+            <Text fx:id="copyrighttext" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright © 2019 CodeBreakers">
+               <HBox.margin>
+                  <Insets left="-210.0" top="730.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Separator fx:id="sep" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets left="-180.0" right="60.0" top="700.0" />
+               </HBox.margin>
+            </Separator>
+         </children>
+      </HBox>
+      <HBox layoutX="248.0" layoutY="11.0" prefHeight="830.0" prefWidth="1182.0" style="-fx-background-color: #ead4e0;">
+         <children>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="61.0" prefWidth="1143.0" style="-fx-background-color: #ead4e0;">
+               <children>
+                  <HBox maxWidth="-Infinity" prefHeight="60.0" prefWidth="50.0">
+                     <children>
+                        <ImageView fitHeight="61.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="850.0" top="-40.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Text fx:id="username" fill="#656565" strokeType="OUTSIDE" strokeWidth="0.0" text="user" textAlignment="CENTER" wrappingWidth="145.888671875">
+                     <VBox.margin>
+                        <Insets left="920.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="profile" fitHeight="34.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/user.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="1080.0" top="-30.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <HBox fx:id="AnimationHBOX" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="119.0" prefWidth="1167.0" style="-fx-background-color: #ed1e5e;">
+               <HBox.margin>
+                  <Insets left="-1160.0" top="62.0" />
+               </HBox.margin>
+               <children>
+                  <Text fx:id="ROLE" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Blog Fashion" textAlignment="CENTER" wrappingWidth="524.865234375">
+                     <HBox.margin>
+                        <Insets left="315.0" top="35.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bookman Old Style Italic" size="36.0" />
+                     </font>
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="WHITE" />
+                              <Stop color="WHITE" offset="0.007633587786259542" />
+                              <Stop color="#ff00aa" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Text>
+               </children>
+               <effect>
+                  <DropShadow height="84.24" radius="31.879999999999995" width="45.28" />
+               </effect>
+            </HBox>
+            <Pane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="1150.0">
+               <HBox.margin>
+                  <Insets left="-1150.0" top="180.0" />
+               </HBox.margin>
+               <children>
+                  <AnchorPane fx:id="SecondScene" prefHeight="649.0" prefWidth="1150.0" style="-fx-background-color: #ead4e0;">
+                     <children>
+                        <ImageView cache="true" fitHeight="525.0" fitWidth="1061.0" layoutX="81.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/logo%20final%202.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+               </children>
+            </Pane>
+         </children>
+         <effect>
+            <DropShadow height="5.0" radius="2.0" width="5.0" />
+         </effect>
+      </HBox>
+   </children>
+</AnchorPane>

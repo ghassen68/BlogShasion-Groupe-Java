@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="360.0" prefWidth="809.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.interfaces.Choix2Controller">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="signupqst11" layoutX="10.0" layoutY="10.0" prefHeight="406.0" prefWidth="792.0" style="-fx-background-radius: 5cm;">
+         <children>
+            <ImageView fitHeight="427.0" fitWidth="809.0" layoutX="-10.0" layoutY="-16.0" opacity="0.72" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/login.jpg" />
+               </image>
+            </ImageView>
+            <JFXTextField editable="false" focusColor="#ff00a9" layoutX="14.0" layoutY="67.0" prefHeight="56.0" prefWidth="293.0" text="Don't  have an account ?" unFocusColor="#ff00a9">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="msg" editable="false" focusColor="#15151700" layoutX="463.0" layoutY="316.0" prefHeight="38.0" prefWidth="314.0" unFocusColor="#4d4d4d00">
+               <font>
+                  <Font name="Maiandra GD" size="16.0" />
+               </font>
+            </JFXTextField>
+            <Separator layoutX="335.0" layoutY="16.0" orientation="VERTICAL" prefHeight="380.0" prefWidth="0.0" style="-fx-background-color: #ff00a9;">
+               <cursor>
+                  <Cursor fx:constant="MOVE" />
+               </cursor>
+            </Separator>
+            <Text layoutX="539.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="196.00001068115228">
+               <font>
+                  <Font name="Candara" size="30.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="114.0" fitWidth="222.0" layoutX="52.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logo%20final%202.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="user_name" layoutX="452.0" layoutY="107.0" prefHeight="38.0" prefWidth="260.0" promptText="Username" unFocusColor="#ff00a9" />
+            <JFXPasswordField fx:id="pass" layoutX="452.0" layoutY="176.0" prefHeight="38.0" prefWidth="260.0" promptText="Password" unFocusColor="#ff00a9" />
+            <Button fx:id="btn_login" layoutX="514.0" layoutY="260.0" mnemonicParsing="false" onAction="#btn_login_signal" opacity="0.86" prefHeight="56.0" prefWidth="150.0" style="-fx-background-color: black; -fx-background-radius: 5cm;" text="Log in">
+               <font>
+                  <Font name="Bodoni MT Italic" size="24.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ff00a9" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <JFXButton fx:id="forgotten" layoutX="478.0" layoutY="367.0" onAction="#forgotten_signal" prefHeight="26.0" prefWidth="222.0" ripplerFill="#1444b5" style="-fx-underline: true;" text="forgot your password" textFill="#ff00a9" />
+            <Button fx:id="signup" layoutX="79.0" layoutY="178.0" mnemonicParsing="false" onAction="#signup" opacity="0.86" prefHeight="56.0" prefWidth="150.0" style="-fx-background-color: black; -fx-background-radius: 5cm;" text="Sign up">
+               <font>
+                  <Font name="Bodoni MT Italic" size="24.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ff00a9" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <JFXTextField fx:id="verif" layoutX="481.0" layoutY="335.0" prefHeight="26.0" prefWidth="222.0" unFocusColor="#4d4d4d00" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

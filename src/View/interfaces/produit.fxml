@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="474.0" prefWidth="418.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.interfaces.ProduitController">
+   <children>
+      <Label fx:id="lb_product" layoutX="154.0" layoutY="37.0" prefHeight="46.0" prefWidth="87.0" text="Product">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_nom" layoutX="34.0" layoutY="131.0" prefHeight="22.0" prefWidth="123.0" text="Product Noum :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_prix" layoutX="39.0" layoutY="180.0" text="Product Price :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_color" layoutX="33.0" layoutY="237.0" prefHeight="22.0" prefWidth="113.0" text="Product Color :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_pay" layoutX="63.0" layoutY="357.0" prefHeight="22.0" prefWidth="77.0" text="Payment :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_qu" layoutX="63.0" layoutY="300.0" text="Quantity :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_nom" layoutX="167.0" layoutY="130.0" />
+      <TextField fx:id="tf_prix" layoutX="167.0" layoutY="178.0" />
+      <ComboBox fx:id="cb_color" layoutX="166.0" layoutY="236.0" prefWidth="150.0" />
+      <ComboBox fx:id="cb_qu" layoutX="166.0" layoutY="298.0" prefWidth="150.0" />
+      <ComboBox fx:id="cb_pay" layoutX="166.0" layoutY="356.0" prefWidth="150.0" />
+      <Button fx:id="add_btt" layoutX="309.0" layoutY="423.0" mnemonicParsing="false" onAction="#bt_ajouter" text="add" />
+      <Button fx:id="bt_panier" layoutX="287.0" layoutY="24.0" mnemonicParsing="false" onAction="#P_panier" prefHeight="26.0" prefWidth="78.0" text="basket" />
+   </children>
+</AnchorPane>

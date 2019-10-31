@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ac" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.interfaces.Menu_productController">
+   <children>
+      <Button fx:id="ap" graphicTextGap="0.0" layoutX="165.0" layoutY="225.0" mnemonicParsing="false" onAction="#addproduct" prefHeight="102.0" prefWidth="233.0" text="addproduct">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#ff10b3" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button fx:id="allp" layoutX="484.0" layoutY="225.0" mnemonicParsing="false" onAction="#AFFICHAGE" prefHeight="102.0" prefWidth="234.0" text="All our products">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#ff10b3" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Button fx:id="rt" layoutX="500.0" layoutY="415.0" mnemonicParsing="false" onAction="#rett" prefHeight="50.0" prefWidth="158.0" text="return">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#ff10b3" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Button fx:id="bascket" layoutX="786.0" layoutY="225.0" mnemonicParsing="false" onAction="#bascket" prefHeight="102.0" prefWidth="234.0" text="Your Bascket">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#ff10b3" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.interfaces.AffichageController">
+   <children>
+      <ListView fx:id="affichage" layoutX="42.0" layoutY="53.0" prefHeight="511.0" prefWidth="604.0" />
+      <JFXButton fx:id="export" layoutX="816.0" layoutY="504.0" prefHeight="60.0" prefWidth="153.0" ripplerFill="#e20404bf" style="-fx-background-color: #504b50; -fx-background-radius: 5cm;" text="Export " textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="Username" editable="false" layoutX="718.0" layoutY="153.0" promptText="Username" />
+      <JFXTextField fx:id="Sexe" editable="false" layoutX="932.0" layoutY="153.0" promptText="Gender" />
+      <JFXTextField fx:id="LastName" editable="false" layoutX="718.0" layoutY="241.0" promptText="First Name" />
+      <JFXTextField fx:id="address" editable="false" layoutX="932.0" layoutY="241.0" promptText="Address" />
+      <JFXTextField fx:id="FirstName" editable="false" layoutX="718.0" layoutY="329.0" promptText="Last Name" />
+      <JFXTextField fx:id="phone" editable="false" layoutX="932.0" layoutY="329.0" promptText="Phone" />
+      <JFXTextField fx:id="email" editable="false" layoutX="830.0" layoutY="421.0" promptText="Email" />
+      <JFXTextField fx:id="recherche" layoutX="757.0" layoutY="53.0" onKeyTyped="#recherche" prefHeight="46.0" prefWidth="283.0" promptText="Search for somone">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

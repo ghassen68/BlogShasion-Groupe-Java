@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="332.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.interfaces.CarteController">
+   <children>
+      <ImageView fitHeight="332.0" fitWidth="634.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../java/views/login.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lb_CN" layoutX="74.0" layoutY="83.0" prefHeight="30.0" prefWidth="135.0" text="Card Number :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_nb" layoutX="242.0" layoutY="85.0" />
+      <Label fx:id="lb_sign" layoutX="104.0" layoutY="154.0" prefHeight="30.0" prefWidth="120.0" text="Signature :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_add" layoutX="74.0" layoutY="245.0" prefHeight="30.0" prefWidth="149.0" text="Adresse _mail:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_sig" layoutX="242.0" layoutY="157.0" />
+      <TextField fx:id="tf_mail" layoutX="245.0" layoutY="247.0" />
+      <Button fx:id="bt_ok" layoutX="486.0" layoutY="289.0" mnemonicParsing="false" onAction="#confirmer_carte" text="OK" />
+   </children>
+</AnchorPane>

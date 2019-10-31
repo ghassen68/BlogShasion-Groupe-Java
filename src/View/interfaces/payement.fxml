@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="228.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.interfaces.PayementController">
+   <children>
+      <Label layoutX="163.0" layoutY="28.0" text="Payment">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="bt_cash" layoutX="99.0" layoutY="113.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="91.0" text="Cash">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="cc" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="bt_carte" layoutX="257.0" layoutY="113.0" mnemonicParsing="false" text="Credit Card" toggleGroup="$cc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="conf_pay" layoutX="184.0" layoutY="175.0" mnemonicParsing="false" onAction="#conf_pay" prefHeight="26.0" prefWidth="50.0" text="Ok" />
+   </children>
+</AnchorPane>
